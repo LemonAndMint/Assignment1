@@ -338,9 +338,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ee550589aa039d40b50073a9563ea35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTotal: 0
-  remainingTime: 0
-  playerName: 
+  playerTotal: -3
+  objectAngle: 65
+  playerName: Adem
 --- !u!4 &1388215034
 Transform:
   m_ObjectHideFlags: 0
