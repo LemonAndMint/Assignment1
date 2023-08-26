@@ -12,6 +12,7 @@ public class Assignment : MonoBehaviour
     void Start()
     {
         _logPlayerTotal(playerTotal);
+        _logDirection(objectAngle);
     }
 
     private void _logPlayerTotal(int total)
@@ -43,6 +44,33 @@ public class Assignment : MonoBehaviour
 
     }
 
-    
+    private void _logDirection(float angle) {
+
+        switch (angle)
+        {
+            
+            case(0f):
+                Debug.Log("Forward");
+                break;
+
+            case(90f):
+                Debug.Log("Right");
+                break;
+
+            case(180f):
+                Debug.Log("Back");
+                break;
+
+            case(270f):
+                Debug.Log("Left");
+                break;
+
+            default:
+                Debug.Log("No Direction");
+                break;
+        }
+
+
+    }
 
 }
