@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Assignment : MonoBehaviour
@@ -13,6 +14,7 @@ public class Assignment : MonoBehaviour
     {
         _logPlayerTotal(playerTotal);
         _logDirection(objectAngle);
+        _logStringReverse(playerName);
     }
 
     private void _logPlayerTotal(int total)
@@ -70,6 +72,20 @@ public class Assignment : MonoBehaviour
                 break;
         }
 
+    }
+
+    private void _logStringReverse(string str)
+    {
+        char[] strArr = str.ToCharArray();
+        int i = strArr.Length - 1;
+
+        while(i >= 0)
+        {
+            
+            Debug.Log(strArr[i]);
+            i--;
+
+        }
 
     }
 
